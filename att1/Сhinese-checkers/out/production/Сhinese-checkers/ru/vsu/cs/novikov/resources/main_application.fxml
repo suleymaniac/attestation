@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsu.cs.novikov.main.MainApplication">
+    <children>
+        <VBox prefHeight="700.0" prefWidth="620.0">
+            <children>
+                <Label alignment="BASELINE_CENTER" text="Ходит 1 игрок">
+                    <VBox.margin>
+                        <Insets left="260.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+
+                <ImageView fitHeight="620" fitWidth="620" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@board_620.jpg" />
+                    </image>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Button alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nextPlayer" text="Сделать ход">
+                    <VBox.margin>
+                        <Insets left="260.0" top="15.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <Group fx:id="root" />
+    </children>
+</Group>
